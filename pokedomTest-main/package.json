@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/CallumGibbons/pokedomTest-main/tree/master/pokedomTest-main",
+  "homepage": "https://github.com/CallumGibbons/pokedomTest-main",
   "author": "Callum Gibbons",
   "scripts": {
     "dev": "vite",
