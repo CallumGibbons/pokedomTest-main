@@ -5,10 +5,8 @@ import "./styles/style.scss";
 const pokemonSearch = document.querySelector<HTMLInputElement>(".pokemon_search");
 
 
-const filterBySearch = () =>{ 
-    pokemonArray.filter(
-  (pokemonArray) => pokemonArray.name === (pokemonSearch?.toString())
-); }
+const filterBySearch = pokemonArray.filter((pokemon) => `${pokemonSearch}` in pokemon)
+const filteredPokemon = filterBySearch.map((searchedPokemon) => searchedPokemon.pokemonSearch)
 //this takes each string in a given array and converts the first letter of each item to capital
 const capitaliseFirstLetter = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
